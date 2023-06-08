@@ -12,6 +12,7 @@ const Component=styled(Box)({
     width:'65%',
     
     
+    
 
 })
 
@@ -34,9 +35,10 @@ export default function Home() {
   return (
     <Component>
         <Image></Image>
-        <Box style={{height:'80%',width:'73%',backgroundColor:'pink'}}>
+        <Box style={{height:'80%',width:'73%',backgroundColor:'#E5E4E2'}}>
             <Form setResult={setResult}/>
-            <Information/>
+            <Information result={result}/>
+            {console.log(result)}
         </Box>
     </Component>
   )

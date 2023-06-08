@@ -29,12 +29,13 @@ const handleChange=(e)=>{
 
         setdata({...data,[e.target.name]:e.target.value})
 
-        console.log(data);
+      //  console.log(data);
 }
 
 const getWeatherInfo=async()=>{
 
     let response=await getWeather(data.city,data.country);
+   // console.log(response);
     setResult(response);
 }
 
